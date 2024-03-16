@@ -23,7 +23,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-atmaterial_new/g' feeds/luci/collectio
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=65535' package/base-files/files/etc/sysctl.conf
 
 # 移除 openwrt feeds 自带的核心包
-rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
+rm -rf feeds/packages/net/{alist,adguardhome,xray*,v2ray*,v2ray*,sing*,smartdns}
 
 # golang 1.22
 rm -rf feeds/packages/lang/golang
