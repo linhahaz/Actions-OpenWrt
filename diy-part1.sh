@@ -22,6 +22,5 @@ sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.4/g' ./target/linux/x86/Makefi
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # echo sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 # echo sed -i '2i src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-
 echo sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo sed -i '2i src-git small https://github.com/kenzok8/small' >>feeds.conf.default
