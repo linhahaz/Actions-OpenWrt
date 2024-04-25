@@ -19,8 +19,8 @@ sed -i 's/luci-theme-bootstrap/luci-theme-atmaterial_new/g' feeds/luci/collectio
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
-# 最大连接数修改为524288
-sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=524288' package/base-files/files/etc/sysctl.conf
+# 最大连接数修改为1048576
+sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=1048576' package/base-files/files/etc/sysctl.conf
 
 # 移除 openwrt feeds 自带的核心包
 rm -rf feeds/packages/net/{alist,adguardhome,xray*,v2ray*,v2ray*,sing*,smartdns}
